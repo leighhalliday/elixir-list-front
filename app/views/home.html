@@ -1,0 +1,9 @@
+<div ng-repeat="article in homeCtrl.articles">
+  <h3>{{article.title}}</h3>
+  <div ng-bind-html="article.body"></div>
+  <p>
+    Author: {{article.user.name}}
+    <img class="mini-avatar" ng-src="https://avatars.githubusercontent.com/u/{{article.user.github_id}}?v=3" />
+  </p>
+  <a ui-sref="articles.show({id: article.id})">Read More</a>
+</div>

@@ -1,0 +1,11 @@
+<form ng-submit="articlesNewCtrl.create()">
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" ng-model="articlesNewCtrl.article.title" id="title" placeholder="A title for your article" />
+  </div>
+  <div class="form-group">
+    <label for="body">Body</label>
+    <textarea id="body" class="form-control" ng-model="articlesNewCtrl.article.body" placeholder="Write a short paragraph about your article"></textarea>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>

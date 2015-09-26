@@ -1,0 +1,45 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+@import "core/_main.scss";
+@import "modules/_header.scss";
+
+/* Custom page footer */
+.footer {
+  margin-top: 19px;
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+}
+
+
+
+
+
+.micro-avatar {
+  max-height: 30px;
+  border-radius: 15px;
+}
+.mini-avatar {
+  max-height: 50px;
+  border-radius: 25px;
+}

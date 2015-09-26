@@ -1,0 +1,9 @@
+<h1>{{articlesShowCtrl.article.title}}</h1>
+<p>{{articlesShowCtrl.article.body}}</p>
+<p>
+  Author: {{articlesShowCtrl.article.user.name}}
+  <br />
+  <a href="{{articlesShowCtrl.article.user.github_url}}">GH</a>
+  <br />
+  <img class="mini-avatar" ng-src="https://avatars.githubusercontent.com/u/{{articlesShowCtrl.article.user.github_id}}?v=3" />
+</p>
